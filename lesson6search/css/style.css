@@ -1,0 +1,127 @@
+/*  //////map
+    //////
+
+*/
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: "Arial", sans-serif;
+  font-size: 100%;
+  height: 100vh;
+  color: #c2c2c2;
+  background-color: #f1f1f1;
+}
+.container{
+  margin: 50px auto 0;
+  max-width: 1200px;
+}
+a:link,
+a:visited,
+a:hover,
+a:active{
+  text-decoration: none;
+}
+a:link{color:#c2c2c2;}
+a:hover{color:#ec5a62;}
+form{
+	position: relative;
+	width:100%;
+	height: 62px;
+}
+.search > input{
+    border: none;
+    font-size: 4em;
+    background-color: transparent; 
+ }
+ .search .searh_input{
+    font-weight: bold;
+    color: #ec5a6;
+    width: 93%; 
+ }
+ input[type="submit"] {
+    width: 75px; 
+    height: 75px; 
+    border: none; 
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    font-size: 70px;
+  }
+ ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(194,194,194);
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 70px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(194,194,194);
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 70px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(194,194,194);
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 70px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(194,194,194);
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 70px;
+}
+.columns{
+  padding: 5em 0;
+}
+.column h2{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+ul li{
+  margin-bottom: 5px;
+}
+ul li a {
+  display: block;
+  padding: 10px;
+  background-color:#ededed ;
+}
+ul li a:hover {
+  display: block;
+  padding: 10px;
+  background-color:grey;
+}
+ul li a img{
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.column{
+  display: inline-block;
+  width: calc(33% - 1em);
+  margin-right: 1em;
+}
+.column:last-child{
+  margin-right: 0;
+}
+.column:first-child img{
+  border-radius: 50%;
+}
+
+cd /d/beetroot/ нажинаем ентер - перемещатьсяпо каталогам
+cd.. уровень выше
+ls посмотреть перечень, что находиться в каталоге
+
+touch - создать файл
+
+mkdir  создание директории(папки)
+
+rmdir удаление  директории
+
+clear очищение окна терминала
+
