@@ -63,18 +63,29 @@ textarea {
 }
 
 .ba-flex-grid{
-
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
 }
 .ba-item{
+	width: 66%;
+	height: 540px;
+}
+.ba-item:first-child{
+	width: 32%;
 }
 .ba-post{
 }
 .ba-post__link{
 	display: block;
 	position: relative;
+	font-size: 0;
 }
 .ba-post__link--abs{
 
+}
+.ba-post__link--abs img{
+ width: 100%;
 }
 .ba-post__link img {
 	// display: block;
@@ -83,6 +94,9 @@ textarea {
 .ba-post__body {
 	background: #FFF;
 	padding: 25px 30px;
+	min-height: 290px;
+    display: flex;
+    flex-direction: column; 
 
 }
 .ba-post__body--abs{
@@ -94,7 +108,9 @@ textarea {
 	right: 0;
 	background: linear-gradient(to bottom, transparent, #000);
 	color: #FFF;
-
+	font-size: 1rem;
+	display: flex;
+	justify-content: flex-end;
 }
 .ba-post__title {
 	font-size: 22px;
@@ -106,9 +122,11 @@ textarea {
 }
 .ba-author{
 	text-decoration: none;
+	display: inline-block;
 
 }
 .ba-author__name{
 	margin: 0 0 0 10px;
 	color: #1D1D1D;
+	display: none;
 }
