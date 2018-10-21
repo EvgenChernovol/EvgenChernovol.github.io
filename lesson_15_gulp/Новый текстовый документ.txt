@@ -1,0 +1,6 @@
+npm init
+git init -не надо
+https://gulpjs.com
+
+
+контл шифт п inst sass * sass 2)snipets 3)без inst набираем sass * Set sintaxis sass
