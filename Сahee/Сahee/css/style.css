@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+    color:#2a2a2a;
+    font-family: 'Raleway', sans-serif;
+}
+.main-header {
+    background-image: url('../img/header-bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 1000px;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.main-header__top-line {
+    padding: 50px 0;
+}
+.logo {
+    display: inline-block;
+}
+.logo__link {
+    display: block;
+    outline: none;
+}
+.header-menu {
+    display: inline-block;
+    float: right;
+    padding-top: 8px;
+}
+.header-menu__ul {}
+.header-menu__li {
+    display: inline-block;
+}
+.header-menu__link {
+    display: block;
+    padding: 9px 10px;
+    border-top: 3px solid transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2a2a2a;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .5s;
+}
+.header-menu__link:hover {
+    border-top: 3px solid #e06039;
+}
+.info-box {
+    max-width: 370px;
+    margin-bottom: 290px;
+}
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin: 0;
+    padding-top: 210px;
+    margin-bottom: 20px;
+}
+.info-box__p {
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.info-box__link {
+    display: inline-block;
+    width: 200px;
+    color: white;
+    background-color: #e06039;
+    padding: 16px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    transition: all .5s;
+    box-shadow: 1px 3px 3px 0px rgba(128,128,128,1);
+}
+.info-box__link:hover {
+	background-color: #923113;
+}
+.scroll__link {
+    background-image: url('../img/scroll.png');
+    width: 24px;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+}
+.about {
+    background-color: #00afaf;
+    padding: 35px 0 25px 0;
+}
+.flex {
+	display: flex;
+}
+.about__img{
+
+}
+.about__info {
+    padding-left: 50px;
+    color: white;
+    padding-top: 135px;
+}
+.section-title {
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.section-text > * {
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.servises{
+	padding:180px 0 150px 0;
+	background-color: #8bbdfd;
+}
