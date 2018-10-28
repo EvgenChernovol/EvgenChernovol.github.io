@@ -6,6 +6,10 @@ notify = require('gulp-notify'),
 sass = require('gulp-sass'),
 clean = require('gulp-clean'),
 browserSync = require('browser-sync').create(),
+ftp = require('vinyl-ftp'),
+gutil = require('gulp-util'),
+test = require('dotenv').config(); // & create .env file with your variables --- add in .gitignore
+
 
 
 gulp.task('sass', () => {
@@ -60,3 +64,17 @@ gulp.task('default', ['clean'], () => {
 });
 
 
+
+
+gulp.task('deploy', () => {
+  const envs = process.env;
+  const host = envs["VAR_FTP_HOST"];
+  const user = envs["VAR_FTP_USER"];
+  const password = envs["VAR_FTP_PASSWORD"];
+  const ftpPath = envs["VAR_FTP_PATH"] || '/';
+  const log = gutil.log;
+  log('deploying to: ' + host);
+  const ftpConnection = ftp.create({ host, user, password, log });
+  return gulp.src('app/**/**', {base: 'app', buffer: false})
+  .pipe(ftpConnection.dest(ftpPath));
+});
