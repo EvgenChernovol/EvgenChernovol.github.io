@@ -5,7 +5,8 @@ autoprefixer = require('gulp-autoprefixer'),
 notify = require('gulp-notify'),
 sass = require('gulp-sass'),
 clean = require('gulp-clean'),
-browserSync = require('browser-sync').create();
+browserSync = require('browser-sync').create(),
+gulpDeployFtp = require('gulp-deploy-ftp');
 
 
 gulp.task('sass', () => {
@@ -57,4 +58,17 @@ gulp.task('developing', ['watch', 'html', 'img', 'sass', 'connect']);
 
 gulp.task('default', ['clean'], () => {
   gulp.start('developing');
+});
+
+
+gulp.task('gulpDeployFtp', function () {
+	return gulp.src('app/*.*')
+	.pipe(gulpDeployFtp({
+		remotePath: '/home/goinweb/goinweb.com.ua/gulp/',
+		host: 'goinweb.ftp.tools',
+		port: 21,
+		user: 'goinweb_gulp',
+		pass: '11111111'
+	}));
+	.pipe(gulp.dest('dest'))
 });
