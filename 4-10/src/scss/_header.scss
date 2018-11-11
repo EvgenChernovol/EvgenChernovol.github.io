@@ -1,0 +1,96 @@
+.main-header{
+	background-image:
+	linear-gradient(
+		to top, rgba(#000, 0.9) 0%, 
+		rgba(#021833, 0.9) 100%),
+	url($img-path + "header-bg.jpg");
+
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+
+	padding-top: 80px;
+
+	&__title{
+
+		margin: -10px 0 10px;
+
+		& > *{
+			font-weight: 300;
+			text-transform: uppercase;
+			font-size: 48px;
+			line-height: 1.5;
+		}
+
+	}
+	&__description{
+		margin-bottom: 20px;
+	}
+	&__img-wrap {
+		position: relative;
+		padding-top: 112%;
+		box-shadow: 2px 2px 5px 0 rgba (#000, 0.1);
+	}
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+	&__img-play {
+		$size: 80px;
+
+
+		@include centred;
+		z-index: 10;
+		border: 10px solid $grey-color;
+		background-color: $white-color;
+		border-radius: 50%;
+		width: $size;
+		height: $size;
+		cursor: pointer;
+
+		.fa-play{
+			color: $pink-color;
+			@include centred;
+		}
+	}
+}
+
+.logo {
+
+	&__link {
+		display: inline-block;
+		font-size: 0;
+	}
+
+	&__img {
+		max-width: 100%;
+	}
+}
+
+.navigation {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item{
+		list-style: none;
+	}
+	&__link {
+		color: $white-color;
+		text-transform: uppercase;
+		font-weight: 600;
+
+
+		&--active {
+			color: $pink-color;
+		}
+		&:hover {
+			color: $pink-color;
+		}
+	}
+}

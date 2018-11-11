@@ -314,3 +314,10 @@ svg{
         max-width: 100%;
     }
 }
+/*----------*/
+$pad-screen:1024px;
+.section {
+	@media (max-width: $pad-screen){
+		width: 100%;
+	}
+}
