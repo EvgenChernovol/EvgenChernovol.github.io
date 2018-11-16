@@ -10,7 +10,7 @@ h1{
 	letter-spacing: 5px;
 	line-height: 26px;
 	color: $white-color;
-	font-family: "Josefin Sans";
+	font-family: $secondary-font;
 	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
@@ -46,7 +46,7 @@ h1{
 		letter-spacing: 7px;
 		line-height: 26px;
 		color: $white-color;
-		font-family: "Josefin Sans";
+		font-family: $secondary-font;
 		text-align: center;
 		text-transform: capitalize;
 		margin-bottom: 50px;
@@ -81,7 +81,7 @@ h1{
 		font-size: 14px;
 		letter-spacing: 1px;
 		line-height: 26px;
-		font-family: "Aleo";
+		font-family: $main-font;
 		text-align: center;
 		border: none;
 
@@ -94,7 +94,7 @@ h1{
 		letter-spacing: 3px;
 		line-height: 26px;
 		color: $white-color;
-		font-family: "Josefin Sans";
+		font-family: $secondary-font;
 		text-align: center;
 		position: relative;
 		text-decoration: none;
@@ -118,7 +118,7 @@ h1{
 	font-size: 14px;
 	letter-spacing: 3px;
 	line-height: 56px;
-	font-family: "Josefin Sans";
+	font-family: $secondary-font;
 	text-transform: capitalize;
 	padding-left: 50px;
 }
@@ -146,7 +146,7 @@ h1{
 		letter-spacing: 2px;
 		line-height: 80px;
 		color: $white-color;
-		font-family: "Josefin Sans";
+		font-family: $secondary-font;
 		font-weight: bold;
 		text-transform: uppercase;
 	}
@@ -159,7 +159,7 @@ h1{
 		font-size: 14px;
 		line-height: 26px;
 		color: $white-color;
-		font-family: "Aleo";
+		font-family: $main-font;
 		text-decoration: none;
 		text-transform: uppercase;
 		line-height: 80px;
@@ -189,19 +189,21 @@ h1{
 	&__heading{
 		font-size: 36px;
 		color:$white-color;
-		font-family: "Aleo";
+		font-family: $main-font;
+		text-transform: capitalize;
 		margin-bottom: 60px;
 	}
 	&__par{
-		font-size: 16px;
+		font-size: $font-size;
 		line-height: 26px;
 		color: $light-color;
-		font-family: "Josefin Sans";
+		font-family: $secondary-font;
 		margin-bottom: 35px;
 	}
 	&__par:last-child{
 		margin-bottom: 45px;
 	}
+	
 	&__img{
 		width:50%;
 		text-align:right;
@@ -219,7 +221,7 @@ h1{
 		font-size: 16px;
 		letter-spacing: 1px;
 		color: $white-color;
-		font-family: "Aleo";
+		font-family: $main-font;
 		text-decoration: none;
 		text-transform: uppercase;
 		background: linear-gradient(50deg, rgba(73,106,254,1) 0%, rgba(73,107,254,1) 36%, rgba(73,106,254,1) 38%, rgba(84,115,253,1) 38%, rgba(84,115,253,1) 100%);
@@ -229,21 +231,38 @@ h1{
 		}
 	}
 }
+/*-----ICON----*/
 .icon{
 	background-color: $light-grey-color;
-	padding: 45px 0 120px;
+	padding: 100px 0 120px;
 
 	&__wrapper{
 		display: flex;
 		justify-content: space-around;
 	}
 	&__box{
-		text-align: center;
+		height: 122px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+
+        &:nth-child(2){
+        position:relative;
+        
+            &::before{
+        position:absolute;
+        content:url($img-path + 'shape.png');
+        top:0;
+             }
+        }
+       
 	}
 	&__title{
 		font-size: 36px;
 		color: $light-color;
-		font-family: "Aleo";
+		font-family: $main-font;
 		text-align: center;
 		display: block;
 	}
