@@ -20,6 +20,7 @@ h1{
 	max-width:1110px;
 	width:100%;
 	margin: 0 auto;
+	height: 100%;
 }
 .main-header{
 	background-image: url("../img/header-bg.png");
@@ -267,3 +268,58 @@ h1{
 		display: block;
 	}
 }
+/*-----HOUSE----*/
+.house{
+	background-image: url($img-path + 'house.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height:100vh;
+	height: 700px;
+
+	&__wrapper{
+	    height: 100%;
+	    position:relative;
+	}
+
+	}
+
+.card{
+	position:absolute;
+	width:540px;
+	padding: 50px 30px;
+	background: rgba(0, 0, 0, 0.5);
+	color: $main-color;
+	font-family: $secondary-font;
+
+	&--house{
+	    left: 0;
+	    top: 50%;
+	    transform:translateY(-50%);
+	}
+	&__title{
+	     font-size: 20px;
+         letter-spacing: 2px;
+         margin-bottom: 30px;
+	}
+	&__subtitle{
+	     font-size: 20px;
+         letter-spacing: 2px;
+         text-transform:uppercase;
+         margin-bottom: 30px;
+	}
+	&__info{
+	    font-size: 16px;
+        line-height: 26px;
+        margin-bottom:50px;
+	}
+	}
+/*-----ROCKS----*/
+.rocks{
+	background-image: url($img-path + 'rocks.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height:100vh;
+	height: 700px;
+	
+
+	}
