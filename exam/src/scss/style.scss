@@ -248,7 +248,7 @@ h1{
 
 		&::before{
         position:absolute;
-        content:url($img-path + 'shape.png');
+        content:url($img-path + 'wave.svg');
         top: -65px;
         left: 50%;
         transform: translateX(-51%);
