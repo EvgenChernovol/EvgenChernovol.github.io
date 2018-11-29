@@ -9,10 +9,40 @@
 </head>
 <body>
 	
-</body>
-</html>
+
+<nav class="navigation-menu js-nav-menu">
+  <div class="navigation-menu__toggle js-nav-menu-toggle">
+    <span class="navigation-menu__bars"></span>
+  </div>
+  <ul class="menu-list">
+    <li class="menu-list__item">Menu Item 1</li>
+    <li class="menu-list__item">Menu Item 2</li>
+    <li class="menu-list__item">Menu Item 3</li>
+    <li class="menu-list__item">Menu Item 4</li>
+    <li class="menu-list__item">Menu Item 5</li>
+  </ul>
+</nav>
 
 <div class="center-box">
 <h1>Evgen Chernovol</h1>
 <div class="description">my work</div>
 </div>
+
+
+<script>
+(function($) {
+  $('.js-nav-menu-toggle').on('click', function() {
+    $(this).parents('.navigation-menu').toggleClass('navigation-menu--open');
+  });
+  
+  $('html').on('click', function(e) {
+    if(!$(e.target).closest('.js-nav-menu').length &&
+      ($('.js-nav-menu').hasClass('navigation-menu--open'))) {
+        $('.js-nav-menu').removeClass('navigation-menu--open');
+    }
+  });
+})(jQuery);
+</script>
+
+</body>
+</html>
