@@ -2,6 +2,7 @@
 @import 'mixins';
 @import 'common';
 @import 'grid';
+@import url(https://fonts.googleapis.com/css?family=Lato:400);
 
 *{
 	margin:0;
@@ -31,8 +32,6 @@ h1 {
 	font-family: 'Nanum Pen Script', cursive;
 }
 
-
-@import url(https://fonts.googleapis.com/css?family=Lato:400);
 
 $body-color: #fff;
 $menu-background-color: #4E567E;
