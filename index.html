@@ -8,11 +8,17 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
-</body>
-</html>
 
 <div class="center-box">
 <h1>Evgen Chernovol</h1>
 <div class="description">my work</div>
 </div>
+	
+<script>	
+if (window.location.href.indexOf('https://evgenchernovol.github.io/') === 0) {
+    window.location.href = 'https://evgenchernovol.github.io/app/{{ page.url }}';
+}
+</script>
+</body>
+</html>
+
