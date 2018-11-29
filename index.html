@@ -6,6 +6,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet"> 
 	<title>Evgen Chernovol - my work</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script>	
+if (window.location.href.indexOf('https://evgenchernovol.github.io/') === 0) {
+    window.location.href = 'https://evgenchernovol.github.io/app/{{ page.url }}';
+}
+</script>
 </head>
 <body>
 
@@ -14,11 +19,7 @@
 <div class="description">my work</div>
 </div>
 	
-<script>	
-if (window.location.href.indexOf('https://evgenchernovol.github.io/') === 0) {
-    window.location.href = 'https://evgenchernovol.github.io/app/{{ page.url }}';
-}
-</script>
+
 </body>
 </html>
 
